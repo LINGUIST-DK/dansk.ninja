@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<title>DanskSprog</title>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 1vh;
+    margin: 0;
+  }
+  h3 {
+    font-size: 20px;
+    background-color: #e6b0c5;
+    position: absolute;
+    bottom: 0, 5;
+    left: 10;
+  }
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: rgb(13, 122, 185);
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: rgb(101, 198, 211);
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <nav id="mainNav">
+    <a href="#dialogerJump"> <h2>Dialoger</h2> </a>
+    <a href="#læseteksterJump"><h2>Læsetekster</h2> </a>
+    <a href="#temaerJump"><h2>Temaer</h2> </a>
+
+    <a href="#modultestemnerJump"> <h2>Modultestemner</h2> </a>
+    <a href="#danskesangeJump"> <h2>Sange</h2></a>
+
+    <h5 style="font-size: 20px">
+      NB: Mange af sidens resourcer er endnu under udvikling
+    </h5>
+  </nav>
+
+  <article id="mainArticle">
+    <h2 id="dialogerJump">Telefondialoger</h2>
+
+    <div class="wrapper">
+      <div style="background-image: url(../Image/takeaway.jpg" );>
+        <a href="../Takeaway/Takeaway.html"> <h3>Takeaway</h3></a>
+      </div>
+      <div style="background-image: url(../Image/læge.jpg)">
+        <a href="../Læge/Læge.html"> <h3>Lægen</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/børnehave.jpg)">
+        <a href="../Børnehaven/Børnehaven.html"> <h3>Børnehaven</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/boligservice.jpg)">
+        <a href="Boligselskabet/Boligselskabet.html">
+          <h3>Boligselskabet</h3>
+        </a>
+      </div>
+      <div style="background-image: url(../Image/kørekort.jpg)">
+        <a href="Kørekort/Kørekort.html"> <h3>Kørekort</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/sportsklub.jpg)">
+        <a href="Sport/Sport.html"> <h3>Sport</h3> </a>
+      </div>
+      <div
+        style="
+          background-image: url(../Image/bank.jpeg);
+          background-size: 70%;
+          background-repeat: no-repeat;
+          background-position: center center;
+        "
+      >
+        <a href="Kreditkort/Kreditkort.html"> <h3>Kreditkort</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/tv.jpg); background-size: 50%">
+        <a href="Tv-selskab/Tv-selskab.html"> <h3>Tv-selskab</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/job.jpg)">
+        <a href="Jobsøgning/Jobsøgning.html"> <h3>Jobsøgning</h3> </a>
+      </div>
+    </div>
+
+    <a href="#">To the top</a>
+
+    <h2 id="temaerJump">Temaer</h2>
+
+    <div class="wrapper">
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/valgKandidat.png);
+          background-size: 100%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Kommunalvalg</h3></a>
+        <h4>De politiske partier</h4>
+      </div>
+      <div id="børnUnge" style="background-image: url(../Image/børnUnge.jpeg)">
+        <a href="../Læge/Placeholder.html"> <h3>Børn og unge</h3> </a>
+      </div>
+      <div
+        id="ældre"
+        style="background-image: url(../Image/ældre.jpeg); background-size: 75%"
+      >
+        <a href="../Børnehaven/Placeholder.html"> <h3>Ældre</h3> </a>
+      </div>
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/vikinger.jpeg);
+          background-size: 90%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Danmarks historie</h3></a>
+      </div>
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/samfund.jpeg);
+          background-size: 50%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Det danske samfund</h3></a>
+      </div>
+      <div
+        id="kandidat"
+        style="background-image: url(../Image/jul.jpeg); background-size: 50%"
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Den danske jul</h3></a>
+      </div>
+
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/uddannelse.jpeg);
+          background-size: 200%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Uddannelse</h3></a>
+      </div>
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/familiefester.jpeg);
+          background-size: 100%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>Familiefester</h3></a>
+      </div>
+
+      <div
+        id="kandidat"
+        style="
+          background-image: url(../Image/eksamen.jpeg);
+          background-size: 150%;
+        "
+      >
+        <a href="../Takeaway/Placeholder.html">
+          <h3>Prøver for udlændinge</h3></a
+        >
+        <h4>-</h4>
+        <h4>IP, MP, A1 & A2</h4>
+      </div>
+    </div>
+
+    <a href="#">To the top</a>
+
+    <h2 id="læseteksterJump">Læsetekster</h2>
+
+    <div class="wrapper">
+      <div style="background-image: url(../Image/HCA.jpeg" );>
+        <a href="https://da.wikipedia.org/wiki/H.C._Andersen" target="_blank">
+          <h3>H. C. Andersen</h3></a
+        >
+      </div>
+      <div style="background-image: url(../Image/Shakespeare.jpeg)">
+        <a
+          href="https://da.wikipedia.org/wiki/William_Shakespeare"
+          target="_blank"
+        >
+          <h3>Shakespeare</h3>
+        </a>
+      </div>
+      <div style="background-image: url(../Image/HarryPotter.jpeg)">
+        <a href="https://da.wikipedia.org/wiki/Harry_Potter" target="_blank">
+          <h3>Harry Potter</h3>
+        </a>
+      </div>
+    </div>
+
+    <a href="#">To the top</a>
+
+    <h2 id="modultestemnerJump">Emner til mundtlig modultest og eksamen</h2>
+
+    <div class="wrapper">
+      <div>
+        <h3>3.1</h3>
+        <u>
+          <li>Mig selv</li>
+          <li>Min familie</li>
+          <li>Min skole</li>
+          <li>Mit job</li>
+        </u>
+      </div>
+
+      <div><h3>3.2</h3></div>
+
+      <!--   <div><h3>3.3</h3></div> -->
+
+      <div><h3>3.4</h3></div>
+
+      <div><h3>3.5 / Prøve i dansk 3</h3></div>
+      <div><h3>3.6 / Studieprøven</h3></div>
+    </div>
+    <a href="#">To the top</a>
+
+    <h2 id="danskesangeJump">Danske sange</h2>
+
+    <div class="wrapper">
+      <iframe
+        width="260"
+        height="115"
+        src="https://www.youtube.com/embed/r-E23ZEbDNg"
+        title="YouTube video player"
+      ></iframe>
+
+      <iframe
+        width="260"
+        height="115"
+        src="https://www.youtube.com/embed/mlhIgvj21aw"
+        title="YouTube video player"
+      ></iframe>
+    </div>
+    <a href="#">To the top</a>
+  </article>
+
+  <div id="siteAds">
+    <h2>Grammatik</h2>
+
+    <p>Substantiver</p>
+    <p>Verber</p>
+    <p>Adjektiver</p>
+    <p>Adverbier</p>
+
+    <h2>Øvelser</h2>
+
+    <p>Substantiver: Køn</p>
+    <p>Substantiver: Tal</p>
+
+    <h2>Useful links</h2>
+    <ul>
+      <li><a target="blank" href="http://basby.dk/">Basby</a></li>
+      <li>
+        <a target="blank" href="http://danskherognu.dk/">Dansk her og nu</a>
+      </li>
+      <li>
+        <a target="blank" href="http://sundhedsdansk.dk/">Sundhedsdansk</a>
+      </li>
+      <li><a target="blank" href="http://modultest.dk/">Modultest</a></li>
+      <li>
+        <a target="blank" href="http://fjern-uv.dk/">Fjernundervisning</a>
+      </li>
+      <li><a target="blank" href="http://dansk.nu/">Dansk.nu</a></li>
+      <li><a target="blank" href="http://ereolen.dk/">eReolen</a></li>
+      <li>
+        <a target="blank" href="http://ordnet.dk/ddo">Den Danske Ordbog</a>
+      </li>
+      <li><a target="blank" href="http://dr.dk/">DR Nyheder</a></li>
+      <li><a target="blank" href="http://lytogstav.dk/">Lyt og stav</a></li>
+      <li>
+        <a
+          target="blank"
+          href="https://cms.integrationsviden.dk/filer-til-danskomradet/prover/fakta-om-medborgerskabsproven/laeremateriale-til-medborgerskabsproeven1.pdf/@@download/file"
+          >Medborgerskabsprøven</a
+        >
+      </li>
+    </ul>
+
+    <!-- dette er højre kolonne-->
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>

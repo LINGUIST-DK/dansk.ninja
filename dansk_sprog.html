@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<title>DanskSprog</title>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 1vh;
+    margin: 0;
+  }
+  h3 {
+    font-size: 20px;
+    background-color: #e6b0c5;
+    position: absolute;
+    bottom: 0, 5;
+    left: 10;
+  }
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: rgb(13, 122, 185);
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: rgb(101, 198, 211);
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <nav id="mainNav">
+    <a href="#substantiverJump"> <h2>Substantiver</h2> </a>
+    <a href="#verberJump"><h2>Verber</h2> </a>
+    <a href="#adjektiverJump"> <h2>Adjektiver</h2> </a>
+    <a href="#adverbierJump"> <h2>Adverbier</h2></a>
+  </nav>
+
+  <article id="mainArticle">
+    <h2 id="substantiverJump">Substantiver</h2>
+
+    <div class="wrapper">
+      <div style="background-image: url(../Image/placeholder.jpg" );>
+        <a href="../Takeaway/placeholder.html"> <h3>Number</h3></a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="../Læge/placeholder.html"> <h3>Definiteness</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="../Børnehaven/placeholder.html"> <h3>Gender</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="Boligselskabet/placeholder.html">
+          <h3>Composites</h3>
+        </a>
+      </div>
+      <div style="background-image: url(../Image/placeholderjpg)">
+        <a href="Kørekort/placeholder.html"> <h3>Derivation</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="Sport/placeholder.html"> <h3>?</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpeg)">
+        <a href="Kreditkort/placeholder.html"> <h3>?</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="Tv-selskab/placeholder.html"> <h3>?</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpg)">
+        <a href="Jobsøgning/placeholder.html"> <h3>?</h3> </a>
+      </div>
+    </div>
+
+    <a href="#">To the top</a>
+
+    <h2 id="verberJump">Verber</h2>
+
+    <div class="wrapper">
+      <div style="background-image: url(../Image/placeholderpeg" );>
+        <a href="../Takeaway/placeholder.html"> <h3>Tense</h3></a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpeg)">
+        <a href="../Læge/placeholder.html"> <h3>Aspect</h3> </a>
+      </div>
+      <div style="background-image: url(../Image/placeholder.jpeg)">
+        <a href="../Børnehaven/placeholder.html"> <h3>Pronouns</h3> </a>
+      </div>
+    </div>
+
+    <a href="#">To the top</a>
+
+    <h2 id="adjektiverJump">Adjektiver</h2>
+
+    <div class="wrapper">
+      <div><h3>Gender</h3></div>
+
+      <div><h3>Number</h3></div>
+
+      <div><h3>Definiteness</h3></div>
+
+      <div><h3>Degree</h3></div>
+
+      <div><h3>Derivation</h3></div>
+    </div>
+    <a href="#">To the top</a>
+
+    <h2 id="adverbierJump">Adverbier</h2>
+
+    <div class="wrapper">
+      <div></div>
+
+      <div></div>
+
+      <div></div>
+    </div>
+    <a href="#">To the top</a>
+  </article>
+
+  <div id="siteAds">
+    <h2 class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Øvelser<o:p></o:p></span
+      ></b>
+    </h2>
+
+    <p><a href="Exercise/Læge/Modalverber_lægedialog.htm">Modalverber</a></p>
+    <p>Substantiver</p>
+    <p>Verber</p>
+    <p>Adjektiver</p>
+    <p>Adverbier</p>
+
+    <!-- dette er højre kolonne-->
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>

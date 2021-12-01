@@ -1,0 +1,44 @@
+#left {
+    position: absolute;
+    top: 300;
+    left: 200;
+    width: 80px;
+}
+
+#middle {
+    position: absolute;
+    top: 0;
+    right: 505;
+    width: 160px;}
+
+#right {
+    position: absolute;
+    top: 0;
+    right: 200;
+    width: 300px;
+}
+
+div {
+    height: 100px;
+    width: 800px;
+    background: rgb(61, 180, 77);
+}
+
+.circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.img-circle {
+    border-radius: 250%;
+    width: 75%;
+    height: 75%;
+}

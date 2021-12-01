@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header "
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 20%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  font-size: larger;
+  /* background-color: pink; */
+}
+
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle {
+  grid-area: article;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+#mainNav {
+  grid-area: nav;
+}
+#siteAds {
+  grid-area: ads;
+  background-color: rgb(223, 140, 47);
+}
+header,
+footer,
+article,
+nav,
+div {
+  padding: 20px;
+  background: lemonchiffon;
+}
+
+nav {
+  background-color: rgb(223, 140, 47);
+}
+
+figure {
+  margin: 0;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  /* grid-auto-rows: 300px; */
+  grid-auto-rows: minmax(100px, auto);
+}
+.wrapper > div {
+  background: rgb(13, 122, 185);
+  padding: 1em;
+}
+.wrapper > div:nth-child(odd) {
+  background: rgb(233, 199, 7);
+}
