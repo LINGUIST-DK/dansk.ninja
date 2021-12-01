@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<title>Børnehaven</title>
+<link rel="stylesheet" href="../Lektioner.css" />
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <!--Husk at udskifte audio-sti nedenfor-->
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Børnehavedialog.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <h2>Bekymret mor ringer til børnehaven</h2>
+    <!-- This is where your main content goes - like a dialogue -->
+
+    <div class="WordSection1">
+      <p class="MsoNormal">
+        Moren til 4-årige Emil ringer til børnehaven for at tjekke at alt er i
+        orden
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Emils mor
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Pædagog
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Børnehuset Snerlen, det er Birgitte
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Hej Birgitte, det er Katrine, Emils P’s mor
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, hej Katrine
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Hvad kan
+        vi gøre for dig?
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, altså, jeg ringer bare lige for at høre, hvordan det går med Emil.
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Han blev
+        jo meget ked af det, da jeg gik på arbejde.
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Jamen, han har det helt fint nu.
+      </p>
+
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Han bygger en ridderborg i Lego sammen med Tristan og Nikoline, og lige
+        nu kan jeg høre, at de har taget et af de andre børn til fange og vil
+        smide ham i <span class="SpellE">fængsel</span>!
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >He <span class="SpellE">he</span> <span class="SpellE">he</span>! Det
+        er rart at høre, at han har det godt!
+      </p>
+
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Det er nok fordi vi lige er kommet tilbage fra ferie. Så bliver de tit
+        kede af det, når de skal i børnehave igen og være væk fra deres
+        forældre. Det har de jo ikke været vant til den sidste måned, mens vi
+        var på ferie.
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, præcis, det er jo det, der sker, og det er helt normalt.
+      </p>
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Det ser vi næsten hos alle børnene, lige efter de er kommet tilbage fra
+        ferie.
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >         
+        </span>
+
+        Ja, okay, men det er da også rart at vide, at det ikke kun er os, der
+        har det sådan.
+      </p>
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Men det gør stadig ondt i ens hjerte som mor,
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, selvfølgelig, men det går heldigvis hurtigt over igen.
+      </p>
+
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Jeg tror, der gik omkring 30 sekunder, fra du var gået ud
+        <span class="GramE">af</span> døren,
+      </p>
+
+      <p class="MsoNormal" style="margin-left: 72pt">
+        til han havde glemt den episode, og var i gang med at lege!
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, okay, det er en stor trøst for mig.
+      </p>
+
+      <p class="MsoNormal" style="margin-left: 72pt">
+        Men jeg ville også lige høre ... jeg er ikke sikker på, at vi har fået
+        givet Emil gummistøvler og nok skiftetøj med i børnehave. Vil du ikke
+        lige tjekke det, og sende mig en besked, så jeg kan have det med i
+        morgen? Ellers glemmer jeg det sikkert!
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Jo, det skal jeg nok.
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Tusind tak!
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Er det
+        forresten ikke på torsdag, at Emils gruppe skal på tur til København?
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Jo, det er det, så I skal huske en rygsæk med drikkedunk og ekstra
+        skiftetøj.
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Okay, ja, det skal vi nok så.
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Mange tak!
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Vi ses i
+        eftermiddag!
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Ja, det gør vi. Fortsat god dag!
+      </p>
+
+      <p class="MsoNormal">
+        EM<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Tak, i lige måde!
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-tab-count: 2">                        </span>Hej, hej.
+      </p>
+
+      <p class="MsoNormal">
+        PÆ<span style="mso-tab-count: 1">      </span>=<span
+          style="mso-tab-count: 1"
+          >          </span
+        >Hej, hej.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+    </div>
+  </article>
+
+  <nav id="mainNav">
+    <h2>Grammatiske emner</h2>
+    <p>
+      <a href="../Grammar/ModalpartiklerDanskNinja.html">Modal Particles</a>
+    </p>
+    <!-- <p>Time Adverbials</p>
+    <p>Formal subject (dummy subject)</p> -->
+
+    <h2>Øvelser</h2>
+
+    <p>
+      <a href="../Exercise/Børnehaven/modalParticles.htm"
+        >Modalpartikler (småord)
+      </a>
+    </p>
+    <!-- <p><a href="Præpositioner.htm">Øvelse 2: Tidsadverbier </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: Formelt subjekt "Det" </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p> -->
+  </nav>
+
+  <div id="siteAds">
+    <div style="position: fixed;><p class="MsoNormal">
+
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+    <p>Børnehus = Day care center</p>
+    <p>ked af det = sad</p>
+    <p>ridderborg = knight's castle</p>
+    <p>tage til fange = capture</p>
+    <p>fængsel = prison</p>
+    <p>være vant til = be used to</p>
+    <p>ferie = vacation</p>
+    <p>gøre ondt = hurt</p>
+    <p>en trøst = a comfort</p>
+    <p>forresten = by the way</p>
+  </div>
+
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>
