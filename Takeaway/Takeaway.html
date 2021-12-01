@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<title>template</title>
+<link rel="stylesheet" href="../Lektioner.css" />
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Takeaway.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <!-- This is where your main content goes - like a dialogue -->
+
+    <p class="MsoNormal">Pizza-mand: PM</p>
+
+    <p class="MsoNormal">Kunde: KD</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Byens pizza, hvad skulle det
+      være?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Hej, jeg vil gerne bestille
+      noget mad.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ja, hvad kunne du tænke dig?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Jeg vil gerne have en pizza
+      nr. 33.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ja, altså en pizza med
+      skinke og artiskokker?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja, men den skal være uden
+      ost, og så må I gerne putte rejer på.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Okay så en nummer 33 uden
+      ost men med rejer, ja, ellers andet?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja, så vil jeg også gerne
+      have en burger med bacon og ost.
+    </p>
+
+    <p class="MsoNormal">
+      PM: <span style="mso-tab-count: 1">     </span>Skal bøffen være
+      hjemmelavet?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja, tak det må den gerne,
+      men burgeren skal være uden syltede agurker og med ekstra bacon.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Okay, var der ellers andre
+      ting?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja jeg skal også lige have
+      en stor bakke pomfritter.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ja, hvad slags sovs skal du
+      have til?
+    </p>
+
+    <p class="MsoNormal">
+      KD: <span style="mso-tab-count: 1">     </span>Jeg vil godt have
+      remoulade.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ja, skal du have noget at
+      drikke til?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja, jeg vil gerne have en
+      stor cola.
+    </p>
+
+    <p class="MsoNormal">
+      PM: <span style="mso-tab-count: 1">     </span>En stor cola, var det det
+      hele?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Ja, det var alt.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Vil du selv hente det eller
+      skal vi komme ud med det?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Jeg vil gerne have det
+      bragt ud.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Okay – hvad er adressen?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Rørsangervej 72, og det er
+      her i byen.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Rørsangervej 72, 4000
+      Roskilde.
+    </p>
+
+    <p class="MsoNormal">
+      KD: <span style="mso-tab-count: 1">     </span>Ja, hvor lang tid går der?
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ca. 45 minutter. Betaler du
+      med kort eller kontanter?
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Har I MobilePay?
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Ja, det har vi.
+    </p>
+
+    <p class="MsoNormal">
+      KD:<span style="mso-tab-count: 1">      </span>Super – hej, hej.
+    </p>
+
+    <p class="MsoNormal">
+      PM:<span style="mso-tab-count: 1">     </span>Farvel.
+    </p>
+
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"><o:p>&nbsp;</o:p></b>
+    </p>
+  </article>
+
+  <nav id="mainNav">
+    <h2>Grammatiske emner</h2>
+    <p>
+      <a href="../Grammar/modalVerbsForPoliteness.html"
+        >Modalverbs used for politeness and intention</a
+      >
+    </p>
+
+    <h2>Øvelser</h2>
+    <p>
+      <a href="../Exercise/Takeaway/index.htm">Modal verbs for speech acts </a>
+    </p>
+
+    <!--  <p><a href="Præpositioner.htm">Øvelse 2: </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p> -->
+  </nav>
+
+  <div id="siteAds">
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+
+    <p class="MsoNormal">
+      hvad skulle det være?<span style="mso-tab-count: 2"
+        >                       </span
+      >’what will it be?’
+    </p>
+
+    <p class="MsoNormal">
+      hvad kunne du tænke dig?<span style="mso-tab-count: 2"
+        >               </span
+      >’what would you like?’
+    </p>
+
+    <p class="MsoNormal">
+      artiskok(ker)<span style="mso-tab-count: 4"
+        >                                     </span
+      >’artichoke(s)’
+    </p>
+
+    <p class="MsoNormal">
+      at putte (på)<span style="mso-tab-count: 4"
+        >                                       </span
+      >’to put (on)’
+    </p>
+
+    <p class="MsoNormal">
+      reje(r)<span style="mso-tab-count: 5"
+        >                                                 </span
+      >’shrimp(s)’
+    </p>
+
+    <p class="MsoNormal">
+      hjemmelavet<span style="mso-tab-count: 4"
+        >                                      </span
+      >’home made’
+    </p>
+
+    <p class="MsoNormal">
+      syltet agurk<span style="mso-tab-count: 4"
+        >                                        </span
+      >’pickeled cucumber’
+    </p>
+
+    <p class="MsoNormal">
+      var der elles andre ting?<span style="mso-tab-count: 2"
+        >                   </span
+      >’will there be anything else?’
+    </p>
+
+    <p class="MsoNormal">
+      bakke<span style="mso-tab-count: 5"
+        >                                                  </span
+      >’tray’
+    </p>
+
+    <p class="MsoNormal">
+      remoulade<span style="mso-tab-count: 4"
+        >                                          </span
+      >’danish pickel mayo’
+    </p>
+
+    <p class="MsoNormal">
+      var det, det hele?<span style="mso-tab-count: 3"
+        >                               </span
+      >’is that all?’
+    </p>
+
+    <p class="MsoNormal">
+      have bragt ud<span style="mso-tab-count: 4"
+        >                                     </span
+      >’have delivered’
+    </p>
+
+    <p class="MsoNormal">
+      hvor lang tid går der?<span style="mso-tab-count: 2"
+        >                       </span
+      >’how long will it be?’
+    </p>
+
+    <p class="MsoNormal">
+      kontanter<span style="mso-tab-count: 4"
+        >                                           </span
+      >’cash’<span style="mso-tab-count: 1">   </span>
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>

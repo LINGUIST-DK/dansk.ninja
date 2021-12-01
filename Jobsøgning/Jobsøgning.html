@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<title>template</title>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <!-- This is where your main content goes - like a dialogue -->
+
+    <p class="MsoNormal">
+      Maria har set en jobannonce, hvor firmaet
+      <span class="SpellE">DanAccount</span> søger en sekretær og personlig
+      assistent til virksomhedens chef, Bettina Abrahamsen
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      MA<span style="mso-tab-count: 1">      </span>=<span
+        style="mso-tab-count: 1"
+        >          </span
+      >Maria
+    </p>
+
+    <p class="MsoNormal">
+      BA<span style="mso-tab-count: 1">       </span>=<span
+        style="mso-tab-count: 1"
+        >          </span
+      >Bettina Abrahamsen
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      BA = <span style="mso-tab-count: 1">   </span>Bettina Abrahamsen
+    </p>
+
+    <p class="MsoNormal">
+      MA = <span style="mso-tab-count: 1">  </span>Hej Bettina, det er Maria
+      Bonde Pedersen, jeg ringer fordi jeg har læst, at I
+    </p>
+
+    <p class="MsoNormal" style="text-indent: 36pt">
+      søger en sekretær og personlig assistent, og jeg har lige et par
+      spørgsmål.
+    </p>
+
+    <p class="MsoNormal" style="text-indent: 36pt">Forstyrrer jeg?</p>
+
+    <p class="MsoNormal">
+      BA =<span style="mso-tab-count: 1">    </span>Hej Maria, nej du forstyrrer
+      ikke.
+    </p>
+
+    <p class="MsoNormal">
+      MA =<span style="mso-tab-count: 1">   </span>Det er godt.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt">
+      Jeg har jo læst jeres annonce om den ledige stilling, som jeg synes lyder
+      virkelig interessant.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt">
+      Men der var lige et par ting, som ikke fremgik af annoncen.
+    </p>
+
+    <p class="MsoNormal">BA =<span style="mso-tab-count: 1">    </span>Ja?</p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA = <span style="mso-tab-count: 1">  </span>Ja, altså, I søger en
+      kombineret sekretær og personlig assistent, og jeg kunne godt tænke mig at
+      vide, hvordan I tænker, at disse to roller vil fordele sig timemæssigt?
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Ja,
+      <span class="SpellE">he</span> he <span class="SpellE">he</span>, det er
+      et godt spørgsmål Maria, og det er svært at svare på. Det vil nok komme
+      til at variere fra uge til uge afhængigt af, hvordan min kalender ser ud.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Okay. Men det er heller ikke
+      fordi det er noget problem, jeg ville bare lige spørge for at kunne gøre
+      mig nogle tanker om opgaverne og være bedre forberedt til en eventuel
+      samtale.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Jamen det er helt fint.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Så ville jeg også lige høre.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA = <span style="mso-tab-count: 1">   </span>Ja?
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA = <span style="mso-tab-count: 1">  </span>I skriver, at der vil indgå
+      bogføring i mindre omfang i stillingen. Jeg har tidligere arbejdet med
+      økonomistyring i Navision. Hvilket program bruger I hos
+      <span class="SpellE">DanAccount</span>?
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Ja, vi bruger Microsoft
+      Dynamics. Det er stort set det samme som Navision.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Nå ok, så de ligner meget
+      hinanden?
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Faktisk så er Dynamics bare
+      en nyere version af Navision, og så har de ændret navnet.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Nå, okay, så burde det i
+      hvert fald bliver let for mig at lære.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Ja, det tror jeg også, at
+      det ville være, i givet fald.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Okay.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      <span style="mso-tab-count: 1">            </span>Jamen, så har jeg vist
+      ikke flere spørgsmål.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      <span style="mso-tab-count: 1">            </span>Du skal have mange tak
+      for din tid og din venlighed.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Jamen, det var da så lidt,
+      og vi ser frem til at læse din ansøgning.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Tak, jeg vil sætte mig til
+      tasterne med det samme.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Okay, fortsat god dag.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      MA =<span style="mso-tab-count: 1">   </span>Tak, i lige måde, hej hej.
+    </p>
+
+    <p class="MsoNormal" style="margin-left: 36pt; text-indent: -36pt">
+      BA =<span style="mso-tab-count: 1">    </span>Hej.
+    </p>
+  </article>
+
+  <nav id="mainNav">
+    <p><a href="Modalverber_lægedialog.htm">Øvelse 1: </a></p>
+    <p><a href="Præpositioner.htm">Øvelse 2: </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
+  </nav>
+
+  <div id="siteAds">
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>

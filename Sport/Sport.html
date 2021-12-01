@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<title>template</title>
+<link rel="stylesheet" href="../Lektioner.css" />
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <!-- This is where your main content goes - like a dialogue -->
+    <div class="WordSection1">
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        Telefonsamtale med kontaktperson i en badmintonklub.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">KP: kontakt person</p>
+
+      <p class="MsoNormal">F: Frank, hvis datter gerne vil spille badminton</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Roskilde Badmintonklub, du taler med Søren, hvad kan jeg gøre for
+        dig?
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        F: Hej, mit navn er Frank, jeg har en datter på ti, som godt kunne tænke
+        sig at starte til badminton. Er det muligt at komme forbi til en gratis
+        prøvetime?
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Ja, det kan du tro. I kan møde op et par gange og se om det er noget
+        for hende. Har hun spillet før?
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">F: Kun lidt i skolen, men ikke før i en klub.</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Okay, så er det nok bedst, hvis hun starter på begynderholdet. Det
+        er sådan, at vi inddeler efter aldersgrupper og niveau. Så jeg skal lige
+        se, hvad der vil være det bedste for hende…
+      </p>
+
+      <p class="MsoNormal">
+        <span style="mso-spacerun: yes">      </span>Vi starter faktisk et nyt
+        U11 begynderhold op i næste uge, det tænker jeg vil være et godt bud.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">F: Det lyder rigtig godt. Hvilke dage træner I?</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Der er træning tirsdag og torsdag fra 15:45-17:15. Så er der kampe
+        og turneringer om lørdagen, men det skal hun nok vente lidt med.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        F: Ja, det må hun hellere. Men det lyder godt. Hvad med ketcher, skal
+        man have sin egen med?
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Vi har ketsjere som man kan låne de første par gange eller hvis man
+        har glemt sin egen. Så kan I jo altid købe en, hvis hun får lyst til at
+        fortsætte.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        F: Ok. Så læste jeg også noget på jeres hjemmeside om indendørssko, er
+        det bare sko som ikke har været brugt udenfor?
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Det er klart, at skoene kun skal være til indendørsbug, men det er
+        vigtigt at sålen på skoene er lys og ikke mærk, for ellers kan det
+        efterlade sorte streger på gulvet i træningssalen og det er svært at
+        vaske af igen.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        F: Ja, det giver god mening. Jamen, så tror jeg faktisk ikke, at jeg har
+        flere spørgsmål.
+      </p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">
+        KP: Ellers er du altid velkommen til at ringe eller besøge klubbens
+        hjemmeside, der kan du også finde mange praktiske informationer.
+      </p>
+
+      <p class="MsoNormal">F: Alle tiders. Så dukker vi bare op på torsdag.</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">KP: I skal være velkomne.</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">F: Tak. Hej.</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal">KP: Hej.</p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+      <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+    </div>
+  </article>
+
+  <nav id="mainNav">
+    <p><a href="Modalverber_lægedialog.htm">Øvelse 1: </a></p>
+    <p><a href="Præpositioner.htm">Øvelse 2: </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
+  </nav>
+
+  <div id="siteAds">
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>

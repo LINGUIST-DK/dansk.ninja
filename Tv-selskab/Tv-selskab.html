@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<title>template</title>
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <!-- This is where your main content goes - like a dialogue -->
+
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        >Manus til dialog med kundeservice hos et tv-selskab<o:p></o:p
+      ></b>
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      Kunden har købt et nyt tv og kan ikke finde nogen kanaler via sit kabel-tv
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD<span style="mso-tab-count: 1">       </span>=<span
+        style="mso-tab-count: 1"
+        >          </span
+      >kunde
+    </p>
+
+    <p class="MsoNormal">
+      KS<span style="mso-tab-count: 1">       </span>=<span
+        style="mso-tab-count: 1"
+        >          </span
+      >kundeservicemedarbejder
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      AUTO-T =<span style="mso-tab-count: 1">       </span>
+    </p>
+
+    <p class="MsoNormal">
+      velkommen til <span class="SpellE">WeWatch</span> kundeservice. Du har nu
+      følgende valgmuligheder: Tast 1 for telefoni, tast 2 for bredbånd, tast 3
+      for kabel-tv
+    </p>
+
+    <p class="MsoNormal">TASTER (3)</p>
+
+    <p class="MsoNormal">
+      Du vil blive stillet gennem til første ledige medarbejder. Hvis du ringer
+      for at oprette et nyt abonnement, så tast 9 for at blive stillet igennem
+      til en salgsmedarbejder. Ellers vent.
+    </p>
+
+    <p class="MsoNormal">
+      Vi optager samtalen og gemmer den i 30 dage med henblik på at uddanne
+      vores medarbejdere. På vores hjemmeside kan du finde informationer om dine
+      rettigheder i denne forbindelse.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span
+      ><span class="SpellE">WeWatch</span> kundeservice, du taler med Daniel,
+      hvad kan jeg gøre for dig?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Ja, hej. Jeg sidder her i
+      min stue og prøver at installere tv-kanalerne på mit nye fjernsyn, men der
+      sker ikke rigtig noget.
+    </p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Okay. Hvad er det for et
+      fjernsyn du har?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Det er et Samsung
+    </p>
+
+    <p class="MsoNormal">
+      KS = <span style="mso-tab-count: 1">    </span>Okay – kan du også lige
+      fortælle mig modelnummeret på det?
+    </p>
+
+    <p class="MsoNormal">
+      KD = <span style="mso-tab-count: 1">   </span>Øh – det har jeg ikke lige
+      ved hånden.
+    </p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Har du fjernsynet i
+      nærheden?
+    </p>
+
+    <p class="MsoNormal">KD = <span style="mso-tab-count: 1">   </span>Ja.</p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Okay – Hvis du går ind i
+      menu og trykker på ”Support” og bagefter på ”Kontakt Samsung”, så kommer
+      modelnummeret op.
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Okay, ja. Modelnummeret er
+      UA55F9000
+    </p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Okay, super.
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Og du siger, at du har
+      problemer med at finde kanalerne.
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>Har du prøvet bare at
+      søge efter kanalerne helt normalt med ”automatisk søgning”?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Ja, det tror jeg nok.
+    </p>
+
+    <p class="MsoNormal">
+      KS = <span style="mso-tab-count: 1">    </span>Okay, lad os lige for en
+      sikkerheds skyld prøve en normal søgning.
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>I menuen skal du trykke
+      ”udsendelse” og så ”Automatisk søgning” og bagefter ”Start”. Det kan godt
+      tage nogle minutter før den bliver færdig. Jeg sætter dig lige på hold
+      imens.
+    </p>
+
+    <p class="MsoNormal">KD =<span style="mso-tab-count: 1">    </span>Ok</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">DER GÅR 5 MINUTTER</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Okay, så er jeg tilbage – er
+      den automatiske kanalsøgning færdig?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Ja, og der blev ikke fundet
+      nogen
+    </p>
+
+    <p class="MsoNormal">
+      KS = <span style="mso-tab-count: 1">    </span>Okay, så skal jeg bede dig
+      om at prøve, at gå til ”Udsendelse” igen og bagefter ”Vælg Antenne” og
+      ”Kabel og kanaltype” og vælge ”Digital og analog”.
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>Så bliver du bedt om at
+      vælge ”Serviceudbyder” og her skal jeg have dig til at vælge
+      <span class="SpellE">WeWatch</span>, fordi du får kabel-tv fra os.
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>Nu kan du så prøve
+      kanalsøgning igen. Det kommer til at tage nogle minutter igen, så jeg
+      sætter dig på hold som før.
+    </p>
+
+    <p class="MsoNormal">
+      KD = <span style="mso-tab-count: 1">   </span>Okay, jeg prøver.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">EFTER 5 MINUTTER</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KS = <span style="mso-tab-count: 1">    </span>okay, så er jeg tilbage –
+      virkede det nu?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Ja, nu har jeg fået alle de
+      kanaler, som jeg plejer at have!
+    </p>
+
+    <p class="MsoNormal">
+      KS =<span style="mso-tab-count: 1">    </span>Super!
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>Er der ellers andet, jeg
+      kan gøre for dig?
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Næh, det tror jeg ikke – tak
+      for hjælpen!
+    </p>
+
+    <p class="MsoNormal">
+      KS = <span style="mso-tab-count: 1">    </span>Jamen det var da så lidt.
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>God aften
+    </p>
+
+    <p class="MsoNormal">
+      KD =<span style="mso-tab-count: 1">    </span>Jo tak, og i lige måde
+    </p>
+
+    <p class="MsoNormal">
+      <span style="mso-tab-count: 1">            </span>Hej.
+    </p>
+
+    <p class="MsoNormal">KS =<span style="mso-tab-count: 1">    </span>Hej.</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </article>
+
+  <nav id="mainNav">
+    <p><a href="Modalverber_lægedialog.htm">Øvelse 1: </a></p>
+    <p><a href="Præpositioner.htm">Øvelse 2: </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
+  </nav>
+
+  <div id="siteAds">
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>
