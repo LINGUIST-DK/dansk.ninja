@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<title>template</title>
+<link rel="stylesheet" href="../Lektioner.css" />
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <div class="WordSection1">
+      <h2>Present perfect vs. past tense</h2>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >There are various grammatical means in Danish to indicate, that some
+          event or state of affairs took place in the past. But these means vary
+          in terms the viewpoint, or aspect, that they express. Here, we’re
+          going to focus on the distinction between past tense and present
+          perfect (aspect). <o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >The past tense indicates the specific past time when an event took
+          place, as illustrated in the examples in (1). That specific time must
+          be either expressed explicitly as in (1a) or simply be known to speech
+          participants as part of their shared knowledge as in (1b), or evident
+          from context as in (1c-d).<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p
+        class="MsoListParagraphCxSpFirst"
+        style="text-indent: -18pt; mso-list: l0 level1 lfo1"
+      >
+        <![if !supportLists]><span
+          lang="EN-US"
+          style="
+            mso-bidi-font-family: Calibri;
+            mso-bidi-theme-font: minor-latin;
+            mso-ansi-language: EN-US;
+          "
+          ><span style="mso-list: Ignore"
+            >(1)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ></span
+        ><![endif]><span lang="EN-US" style="mso-ansi-language: EN-US"
+          >a.<span style="mso-tab-count: 1">       </span
+          ><span class="SpellE">Jeg</span> var <span class="SpellE">til</span>
+          <span class="SpellE">koncert</span> <span class="SpellE">i</span>
+          <span class="SpellE">weekenden</span
+          ><span style="mso-tab-count: 1">               </span>’I attended a
+          concert over the weekend’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoListParagraphCxSpMiddle">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >b.<span style="mso-tab-count: 1">       </span>Vi
+          <span class="SpellE">gik</span> <span class="SpellE">også</span>
+          <span class="SpellE">på</span> restaurant<span
+            style="mso-tab-count: 1"
+            >    </span
+          ><span style="mso-tab-count: 1">                      </span>’We also
+          went to a restaurant’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoListParagraphCxSpMiddle">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >c.<span style="mso-tab-count: 1">       </span
+          ><span class="SpellE">Hvem</span> <span class="SpellE">bankede</span>
+          <span class="SpellE">på</span> <span class="SpellE">døren</span>?<span
+            style="mso-tab-count: 2"
+            >                        </span
+          >’Who knocked on the door?’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoListParagraphCxSpLast">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >d.<span style="mso-tab-count: 1">       </span>Gav du
+          <span class="SpellE">pizzamanden</span>
+          <span class="SpellE">drikkepenge</span>?<span style="mso-tab-count: 1"
+            >         </span
+          >‘Did you tip the pizza guy?’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >The present perfect, on the other hand, indicates that an event or
+          state of affairs has taken place in the past and also has current
+          relevance at the time of speech. Unlike the past tense, it does not
+          focus on the specific time when it took place. Current relevance can
+          take the form of noticing, discovering or conveying new information as
+          in (2a-b) or as part of the accumulative experience of speech
+          <span class="SpellE">particpants</span> as in (2c-d).<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoNormal">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p
+        class="MsoListParagraphCxSpFirst"
+        style="text-indent: -18pt; mso-list: l0 level1 lfo1"
+      >
+        <![if !supportLists]><span
+          lang="EN-US"
+          style="
+            mso-bidi-font-family: Calibri;
+            mso-bidi-theme-font: minor-latin;
+            mso-ansi-language: EN-US;
+          "
+          ><span style="mso-list: Ignore"
+            >(2)<span style="font: 7pt 'Times New Roman'"
+              >&nbsp;&nbsp;
+            </span></span
+          ></span
+        ><![endif]><span lang="EN-US" style="mso-ansi-language: EN-US"
+          >a.<span style="mso-tab-count: 1">       </span
+          ><span class="SpellE">Nogen</span> har
+          <span class="SpellE">drukket</span> min
+          <span class="SpellE">mælk</span>!<span style="mso-tab-count: 1"
+            >                </span
+          >‘<span class="SpellE">Sombody</span> has drunk my milk!’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoListParagraphCxSpMiddle">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >b.<span style="mso-tab-count: 1">       </span>Din
+          <span class="SpellE">plakat</span> er
+          <span class="SpellE">faldet</span> <span class="SpellE">ned</span>
+          <span class="SpellE">igen</span
+          ><span style="mso-tab-count: 1">                   </span>‘<span
+            class="GramE"
+            >You</span
+          >
+          poster has fallen down again’<o:p></o:p
+        ></span>
+      </p>
+
+      <p class="MsoListParagraphCxSpMiddle">
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >c.<span style="mso-tab-count: 1">       </span
+          ><span class="SpellE">Jeg</span> har
+          <span class="SpellE">været</span> <span class="SpellE">i</span>
+          <span class="SpellE">Indien</span> mange
+          <span class="SpellE">gange</span
+          ><span style="mso-tab-count: 1">        </span>‘I’ve been to India
+          many times’<o:p></o:p
+        ></span>
+      </p>
+
+      <p
+        class="MsoListParagraphCxSpLast"
+        style="tab-stops: 65.2pt 130.4pt 195.6pt 260.8pt 294pt"
+      >
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >d.<span style="mso-tab-count: 1">       </span>Hun har
+          <span class="SpellE">arbejdet</span> her
+          <span class="SpellE">i</span> mange <span class="SpellE">år</span
+          ><span style="mso-tab-count: 1">             </span>‘She’s worked here
+          for many years’<o:p></o:p
+        ></span>
+      </p>
+
+      <p
+        class="MsoNormal"
+        style="tab-stops: 65.2pt 130.4pt 195.6pt 260.8pt 294pt"
+      >
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          ><o:p>&nbsp;</o:p></span
+        >
+      </p>
+
+      <p
+        class="MsoNormal"
+        style="tab-stops: 65.2pt 130.4pt 195.6pt 260.8pt 294pt"
+      >
+        <span lang="EN-US" style="mso-ansi-language: EN-US"
+          >As evident from (2) it is not relevant whether or not the event or
+          state of affairs is finished at the time of speech, nor how long it
+          lasted, or has lasted, nor whether it happened quickly or suddenly or
+          has some duration. The crucial factor is current relevance at time of
+          speech.<o:p></o:p
+        ></span>
+      </p>
+    </div>
+
+    <!-- This is where your main content goes - like a dialogue -->
+  </article>
+
+  <nav id="mainNav"></nav>
+
+  <div id="siteAds"></div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>
