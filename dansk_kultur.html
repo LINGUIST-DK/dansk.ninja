@@ -84,12 +84,23 @@
   </header>
 
   <nav id="mainNav">
-    <a href="#dialogerJump"> <h2>Dialoger</h2> </a>
-    <a href="#læseteksterJump"><h2>Læsetekster</h2> </a>
-    <a href="#temaerJump"><h2>Temaer</h2> </a>
+    <!-- <form id="form" role="search">
+      <input
+        type="search"
+        id="query"
+        name="q"
+        placeholder="Search..."
+        aria-label="Search through site content"
+      />
+      <button>Search</button>
+    </form> -->
 
-    <a href="#modultestemnerJump"> <h2>Modultestemner</h2> </a>
-    <a href="#danskesangeJump"> <h2>Sange</h2></a>
+    <a href="#dialogerJump"> <h2>Dialogues</h2> </a>
+    <a href="#læseteksterJump"><h2>Reading texts</h2> </a>
+    <a href="#temaerJump"><h2>Themes</h2> </a>
+
+    <a href="#modultestemnerJump"> <h2>Modules and topics</h2> </a>
+    <a href="#danskesangeJump"> <h2>Songs</h2></a>
 
     <h5 style="font-size: 20px">
       NB: Mange af sidens resourcer er endnu under udvikling
@@ -97,7 +108,7 @@
   </nav>
 
   <article id="mainArticle">
-    <h2 id="dialogerJump">Telefondialoger</h2>
+    <h2 id="dialogerJump">Phone dialogues</h2>
 
     <div class="wrapper">
       <div style="background-image: url(Image/takeaway.jpg" );>
@@ -236,7 +247,7 @@
 
     <a href="#">To the top</a>
 
-    <h2 id="læseteksterJump">Læsetekster</h2>
+    <h2 id="læseteksterJump">Reading texts</h2>
 
     <div class="wrapper">
       <div style="background-image: url(Image/HCA.jpeg" );>
@@ -291,11 +302,17 @@
 
     <a href="#">To the top</a>
 
-    <h2 id="modultestemnerJump">Emner til mundtlig modultest og eksamen</h2>
+    <h2 id="modultestemnerJump">
+      Topics for modules, module test and final exams
+    </h2>
 
     <div class="wrapper">
-      <div>
-        <h3>3.1</h3>
+      <div
+        id="kandidat"
+        style="background-image: url(Image/modul1.png); background-size: 100%"
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>3.1</h3></a>>
+
         <u>
           <li>Mig selv</li>
           <li>Min familie</li>
@@ -304,13 +321,37 @@
         </u>
       </div>
 
-      <div><h3>3.2</h3></div>
+      <div
+        id="kandidat"
+        style="background-image: url(Image/modul2.png); background-size: 100%"
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>3.2</h3></a>>
+      </div>
 
       <!--   <div><h3>3.3</h3></div> -->
 
-      <div><h3>3.4</h3></div>
+      <div
+        id="kandidat"
+        style="background-image: url(Image/modul3.png); background-size: 100%"
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>3.3</h3></a>>
+      </div>
 
-      <div><h3>3.5 / Prøve i dansk 3</h3></div>
+      <div
+        id="kandidat"
+        style="background-image: url(Image/modul4.png); background-size: 100%"
+      >
+        <a href="../Takeaway/Placeholder.html"> <h3>3.4</h3></a>>
+      </div>
+
+      <div
+        id="kandidat"
+        style="background-image: url(Image/modul5.png); background-size: 100%"
+      >
+        <a href="../Takeaway/Placeholder.html">
+          <h3>3.5 / Prøve i dansk 3</h3></a
+        >>
+      </div>
       <div
         id="kandidat"
         style="
@@ -323,7 +364,7 @@
     </div>
     <a href="#">To the top</a>
 
-    <h2 id="danskesangeJump">Danske sange</h2>
+    <h2 id="danskesangeJump">Songs</h2>
 
     <div class="wrapper">
       <iframe
@@ -344,14 +385,29 @@
   </article>
 
   <div id="siteAds">
-    <h2>Grammatik</h2>
+    <h2>Grammar</h2>
 
-    <p>Substantiver</p>
-    <p>Verber</p>
-    <p>Adjektiver</p>
-    <p>Adverbier</p>
+    <p>Nouns</p>
+    <p>Verbs</p>
 
-    <h2>Øvelser</h2>
+    <p>Adjectives</p>
+    <p>Adverbs</p>
+    <p>Pronouns</p>
+    <p>Prepositions</p>
+    <p>Conjunctions</p>
+
+    <h2>Exercises</h2>
+
+    <p>
+      <a href="Exercise/Boligselskab/index.htm"
+        >Present perfect vs. past tense</a
+      >
+    </p>
+    <p><a href="Exercise/Læge/Modalverber_lægedialog.htm">Modal verbs</a></p>
+    <p><a href="Exercise/Takeaway/index.htm">Modal verbs for politeness</a></p>
+    <p><a href="Exercise/Børnehaven/modalParticles.htm">Modal particles</a></p>
+    <p><a href="Exercise/Læge/Præpositioner.htm">Prepositions</a></p>
+    <p><a href="Exercise/Numbers/Tal1-10.htm">Numbers 1-10</a></p>
 
     <p>Substantiver: Køn</p>
     <p>Substantiver: Tal</p>
@@ -393,4 +449,19 @@
       Haurholm-Larsen</medium
     >
   </footer>
+  <!-- <script>
+    const f = document.getElementById("form");
+    const q = document.getElementById("query");
+    const google = "https://www.google.com/search?q=site%3A+";
+    const site = "https://linguist-dk.github.io/dansk.ninja/";
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + "+" + q.value;
+      const win = window.open(url, "_blank");
+      win.focus();
+    }
+
+    f.addEventListener("submit", submitted);
+  </script> -->
 </body>
