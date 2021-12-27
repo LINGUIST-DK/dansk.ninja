@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<title>template</title>
+<link rel="stylesheet" href="../Lektioner.css" />
+
+<style>
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 20%;
+    grid-gap: 10px;
+    height: 100vh;
+    margin: 0;
+  }
+
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+    background-color: rgb(223, 140, 47);
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
+
+  nav {
+    background-color: rgb(223, 140, 47);
+  }
+
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/phone-icon.jpg"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
+  </header>
+
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
+
+    <!-- This is where your main content goes - like a dialogue -->
+
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span
+          style="font-size: 16pt; mso-bidi-font-size: 14pt; line-height: 107%"
+          >Dialog: Ombytning af kørekort</span
+        ></b
+      ><span
+        style="font-size: 16pt; mso-bidi-font-size: 14pt; line-height: 107%"
+        ><o:p></o:p
+      ></span>
+    </p>
+
+    <p class="MsoNormal">
+      <i>F: Frank, der ønsker ombytning af kørekort<o:p></o:p></i>
+    </p>
+
+    <p class="MsoNormal">
+      <i>OD: omstillingsdame <o:p></o:p></i>
+    </p>
+
+    <p class="MsoNormal">
+      <i>KD: kørekortdame <o:p></o:p></i>
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      Autosvar: Du har ringet til Borgerservice. Har du spørgsmål til digital
+      post, byg og miljø, skal du anmelde rotter eller har du brug for hjælp til
+      selvbetjening tryk 1. Har du generelle spørgsmål til pas, kørekort,
+      folkeregistre eller mit sygefravær tast 2. Ellers vent for personlig
+      betjening.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal" align="center" style="text-align: center">
+      <i>Klartone<o:p></o:p></i>
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">OD: Borgerservice, hvad kan jeg hjælpe med?</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Hej! Jeg har et par spørgsmål til ombytning af kørekort.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">OD: Ja, hvad drejer din henvendelse sig nærmere om?</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Jeg har et kørekort fra mit hjemland, som jeg gerne vil have byttet til
+      et dansk kørekort.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      OD: Ok. Hæng lige på, mens jeg stiller dig om til min kollega i afdelingen
+      for kørekort.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">…</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Afdelingen for kørekort, hvad kan jeg hjælpe med?
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Ja, hej! Jeg vil gerne have ombyttet mit kørekort.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">KD: Hvor kommer du fra?</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">F: Sydafrika.</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Okay. Så skal du op til en køreprøve, der består af en teoretisk prøve
+      og en praktisk prøve inden du kan få kørekortet ombyttet.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Okay, det må jeg jo så gøre. Hvordan kommer jeg i gang?
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Du skal kontakte en køreskole, da det er en kørelærer, der i sidste
+      ende afgør, hvornår du er klar og kan blive indstillet til prøven.<span
+        style="mso-spacerun: yes"
+        >  
+      </span>
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">F: Nåh, okay.</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Er dit kørekort allerede blevet godkendt af de danske myndigheder?
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Jeg har fået det oversat, <span class="SpellE">notariseret</span> og
+      stemplet på den danske ambassade, så der burde være styr på det hele?!
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD. Aha, så skal du kontakte din læge og få foretaget et lægetjek til
+      kørekort.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">F: Kan jeg få det gjort hos min praktiserende læge?</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Ja, du ringer bare til lægen og fortæller, at du skal have kørekort,
+      så kender de proceduren.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Er der ellers noget jeg skal forberede eller gøre?
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Du skal medbringe et vellignende foto, når du skal op til lægen.
+      Billedet bliver stemplet bag på af lægen, som bevis på, at det er dig.
+      Derefter skal du booke en aftale hos os i Borgerservice og så medbringe
+      lægeattesten og billedet.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Skal jeg ellers tage noget billedlegitimation med, når jeg skal op til
+      jer?
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Ja, du skal også have dit opholdskort med, plus en kopi, og så skal du
+      huske oversættelsen af dit kørekort, altså det du har fået udstedt i dit
+      hjemland.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      F: Det lyder rigtig godt. Jeg vil straks ringe til lægen og bestille en
+      tid. Mange tak for hjælpen.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">
+      KD: Det var så lidt. Fortsat god dag og held og lykke med det.
+    </p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">F: Mange tak! Hej hej.</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal">KD: Farvel.</p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+    <p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+  </article>
+
+  <nav id="mainNav">
+    <h2>Grammatiske emner</h2>
+    <p>
+      <a href="../Grammar/danskNinjaRelativeClauses.html">Relative clauses</a>
+    </p>
+
+    <h2>Øvelser</h2>
+
+    <p>
+      <a href="Modalverber_lægedialog.htm"
+        >Øvelse 1: Relativsætninger, der/som, hvor
+      </a>
+    </p>
+    <p>
+      <a href="Præpositioner.htm"
+        >Øvelse 2: Spørgeord som konjunktioner (S vs. O)
+      </a>
+    </p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: Frasalverber </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
+  </nav>
+
+  <div id="siteAds">
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
+  </footer>
+</body>
