@@ -1,276 +1,544 @@
 <!DOCTYPE html>
 <title>Lægen</title>
 <style>
-body { 
-  display: grid;
-  grid-template-areas: 
-    "header header header "
-    "nav article ads"
-    "footer footer footer";
-  grid-template-rows: 60px 1fr 60px;
-  grid-template-columns: 20% 1fr 40%;
-  grid-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }
-#pageHeader {
-  grid-area: header;
-}
-#pageFooter {
-  grid-area: footer;
-}
-#mainArticle { 
-  grid-area: article;      
-  }
-#mainNav { 
-  grid-area: nav; 
-  }
-#siteAds { 
-  grid-area: ads; 
-  }
-header, footer, article, nav, div {
-  padding: 20px;
-  background: lemonchiffon;
-}
-
-figure {
+  body {
+    display: grid;
+    grid-template-areas:
+      "header header header "
+      "nav article ads"
+      "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 20% 1fr 40%;
+    grid-gap: 10px;
+    height: 100vh;
     margin: 0;
-}
+  }
+  #pageHeader {
+    grid-area: header;
+  }
+  #pageFooter {
+    grid-area: footer;
+  }
+  #mainArticle {
+    grid-area: article;
+  }
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
+    padding: 20px;
+    background: lemonchiffon;
+  }
 
+  figure {
+    margin: 0;
+  }
 </style>
 <body>
- 
- 
- 
-  <header id="pageHeader" style="background-color:#E6B0C5;">
- 
- 
- <p> <a href="../index.html"> <img src="../Image/phone-icon.jpg" width=40 heigth=40 alt=Home align=left> HJEM </a></p>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/ninja.png"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+        HJEM
+      </a>
+    </p>
 
-  
-   <figure align="right">
-    <figcaption>Lyt til samtalen</figcaption>
-    <audio
-        controls
-        src="Lægedialog1_red.wav"
-        align="middle">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-</figure>
-  
+    <figure align="right">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
   </header>
   <article id="mainArticle">
-  
+    <h1 class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Birthe ringer til lægen<o:p></o:p></span
+      ></b>
+    </h1>
 
-<h1 class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Birthe ringer til lægen<o:p></o:p></span></b></h1>
+    <p class="MsoNormal">
+      <span lang="DA"><o:p>&nbsp;</o:p></span>
+    </p>
 
-<p class=MsoNormal><span lang=DA><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >læge</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>læge</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >patient</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>patient</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"><o:p>&nbsp;</o:p></span>
+    </p>
 
-<p class=MsoNormal><span lang=DA><o:p>&nbsp;</o:p></span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Det er hos lægehuset, det er Torben</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Det
-er hos lægehuset, det er Torben</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Hej, jeg vil gerne bestille en tid til min datter.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Hej,
-jeg vil gerne bestille en tid til min datter.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Ja, prøv lige at give mig hendes CPR-nummer.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ja,
-prøv lige at give mig hendes CPR-nummer.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Ja, det er 240512-3212</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ja,
-det er 240512-3212</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >... Ida Jensen, er det hende?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>...
-Ida Jensen, er det hende?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Ja.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Ja.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Okay &#8211; hvad fejler hun?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Okay
-&#8211; hvad fejler hun?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Hun har kastet op og vil ikke spise noget.
+      </span>
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Hun
-har kastet op og vil ikke spise noget. </span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Hvor længe har det stået på?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Hvor
-længe har det stået på?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Det startede med at hun kastede op i bilen i går eftermiddags på vej
+        hjem fra SFO, og hun gjorde det igen flere gange i løbet af aftenen i
+        går.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Det
-startede med at hun kastede op i bilen i går eftermiddags på vej hjem fra SFO,
-og hun gjorde det igen flere gange i løbet af aftenen i går.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Aha &#8211; har hun været forkølet eller haft feber i de seneste
+        dage?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Aha
-&#8211; har hun været forkølet eller haft feber i de seneste dage?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Nej.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Nej.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Har hun feber nu?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Har
-hun feber nu?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Det ved jeg ikke.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Det
-ved jeg ikke.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Har hun ondt nogen steder på kroppen?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Har
-hun ondt nogen steder på kroppen?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Hun siger, at hun har meget ondt i hovedet.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Hun
-siger, at hun har meget ondt i hovedet.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Virker hun sløv eller nogenlunde frisk og nem at tale med?</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Virker
-hun sløv eller nogenlunde frisk og nem at tale med?</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Hun er lidt sløv, men vi kan sagtens tale med hende uden
+        problemer.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Hun
-er lidt sløv, men vi kan sagtens tale med hende uden problemer.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:
+        <span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp; </span>Okay, men
+        det er i hvert fald vigtigt at hun drikker rigeligt med væske, så hun
+        ikke bliver dehydreret, fordi kroppen har mistet en del væske når hun
+        har kastet så meget op.
+      </span>
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ: <span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Okay,
-men det er i hvert fald vigtigt at hun drikker rigeligt med væske, så hun ikke
-bliver dehydreret, fordi kroppen har mistet en del væske når hun har kastet så
-meget op. </span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Det lyder som om, det kunne være noget influenza, men jeg vil godt se
+        på Ida i dag ... vi har en tid kl. 10.30.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Det
-lyder som om, det kunne være noget influenza, men jeg vil godt se på Ida i dag
-... vi har en tid kl. 10.30.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Det passer ikke så godt, fordi jeg har først fri fra arbejde kl. 11.30
+        og hun er hjemme hos sin farmor.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Det
-passer ikke så godt, fordi jeg har først fri fra arbejde kl. 11.30 og hun er
-hjemme hos sin farmor.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Vi er desværre fuldt booket efter kl. 11 i dag &#8211; ellers kommer I
+        til at vente til i morgen.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Vi
-er desværre fuldt booket efter kl. 11 i dag &#8211; ellers kommer I til at
-vente til i morgen.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Nå, okay, så kommer vi kl. 10.30 i dag.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Nå,
-okay, så kommer vi kl. 10.30 i dag.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Godt, det skriver jeg &#8211; og det bliver hos Marianne.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Godt,
-det skriver jeg &#8211; og det bliver hos Marianne.</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >PA:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Okay, tak for det, hej, hej.</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>PA:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Okay,
-tak for det, hej, hej.</span></p>
-
-<p class=MsoNormal><span lang=DA>LÆ:<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Farvel.</span></p>
-
-  
+    <p class="MsoNormal">
+      <span lang="DA"
+        >LÆ:<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >Farvel.</span
+      >
+    </p>
   </article>
- 
 
   <nav id="mainNav">
-  
-  
-<p><a href="Modalverber_lægedialog.htm">Øvelse 1: Modalverber </a></p>
-<p><a href="Præpositioner.htm">Øvelse 2: Præpositioner </a></p>
-<p><a href="Build-up_læge01.htm">Øvelse 3: Build-up </a></p>
-<p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
-<p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
-
-
-
-
-  
+    <p><a href="Modalverber_lægedialog.htm">Øvelse 1: Modalverber </a></p>
+    <p><a href="Præpositioner.htm">Øvelse 2: Præpositioner </a></p>
+    <p><a href="Build-up_læge01.htm">Øvelse 3: Build-up </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
   </nav>
-  
-  
+
   <div id="siteAds">
-  
-  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Gloseliste:<o:p></o:p></span></b></p>
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
 
-<p class=MsoNormal><span lang=DA>bestille en tid<span style='mso-tab-count:
-4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’make
-an appointment’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >bestille en tid<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’make an appointment’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>hvad fejler han<span style='mso-tab-count:
-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’what
-is wrong with him?’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >hvad fejler han<span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’what is wrong with him?’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>prøv lige at ...<span style='mso-tab-count:
-4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’could
-you please just ...’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >prøv lige at ...<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’could you please just ...’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>kaste op<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’to
-vomit’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >kaste op<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’to vomit’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>hvor længe har det stået på?<span
-style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’how
-long has it persisted?’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >hvor længe har det stået på?<span style="mso-tab-count: 1"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’how long has it persisted?’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>være forkølet<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’have
-a cold’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >være forkølet<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’have a cold’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>feber<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’fever’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >feber<span style="mso-tab-count: 5"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’fever’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>sløv<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’lacking
-energy’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >sløv<span style="mso-tab-count: 5"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’lacking energy’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>frisk<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’energized’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >frisk<span style="mso-tab-count: 5"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’energized’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>rigeligt<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’plenty’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >rigeligt<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’plenty’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>væske<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’fluid’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >væske<span style="mso-tab-count: 5"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’fluid’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>det passer ikke<span style='mso-tab-count:
-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’not
-convenient’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >det passer ikke<span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’not convenient’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>kommer til at<span
-style="mso-spacerun:yes">&nbsp; </span>...<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’will
-have to ...’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >kommer til at<span style="mso-spacerun: yes">&nbsp; </span>...<span
+          style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’will have to ...’</span
+      >
+    </p>
 
-  <br>
-  
-  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Liste
-over almindelige sygdomme og symptomer:<o:p></o:p></span></b></p>
-<p class=MsoNormal><span lang=DA>Forkølelse<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’common
-cold’</span></p>
+    <br />
 
-<p class=MsoNormal><span lang=DA>Hovedpine / migræne<span style='mso-tab-count:
-2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’headache
-/ migraine’</span></p>
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA"
+          >Liste over almindelige sygdomme og symptomer:<o:p></o:p></span
+      ></b>
+    </p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Forkølelse<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’common cold’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Feber<span style='mso-tab-count:5'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’fever’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Hovedpine / migræne<span style="mso-tab-count: 2"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’headache / migraine’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Opkastning<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’vomiting’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Feber<span style="mso-tab-count: 5"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’fever’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Lungebetændelse<span style='mso-tab-count:
-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’pneumonia’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Opkastning<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’vomiting’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Halsbetændelse<span style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’sore
-throat’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Lungebetændelse<span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’pneumonia’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Mellemørebetændelse<span style='mso-tab-count:
-2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’infection
-of the middle ear’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Halsbetændelse<span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’sore throat’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Bihulebetændelse<span style='mso-tab-count:
-3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’sinusitis’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Mellemørebetændelse<span style="mso-tab-count: 2"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’infection of the middle ear’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Halsbrand<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’heartburn’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Bihulebetændelse<span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’sinusitis’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Rygsmerter<span style='mso-tab-count:1'>&nbsp;&nbsp;&nbsp; </span><span
-style='mso-tab-count:3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’back
-pain’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Halsbrand<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’heartburn’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Høfeber<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’hayfever’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Rygsmerter<span style="mso-tab-count: 1">&nbsp;&nbsp;&nbsp; </span
+        ><span style="mso-tab-count: 3"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’back pain’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Mavesmerter<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’abdominal
-pain’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Høfeber<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’hayfever’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Fodsvamp<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’athlete’s
-foot’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Mavesmerter<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’abdominal pain’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Blod i afføringen/urinen<span
-style='mso-tab-count:2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’blood
-in the stools/urin’</span></p>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Fodsvamp<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’athlete’s foot’</span
+      >
+    </p>
 
-<p class=MsoNormal><span lang=DA>Blodig hoste<span style='mso-tab-count:4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>’bloody
-cough’</span></p></div>
-  <footer id="pageFooter" style="background-color:#E6B0C5;">
-  
-         <medium>&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen Haurholm-Larsen</medium>
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Blod i afføringen/urinen<span style="mso-tab-count: 2"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’blood in the stools/urin’</span
+      >
+    </p>
 
- 
+    <p class="MsoNormal">
+      <span lang="DA"
+        >Blodig hoste<span style="mso-tab-count: 4"
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span
+        >’bloody cough’</span
+      >
+    </p>
+  </div>
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
   </footer>
 </body>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <title>template</title>
 <style>
-  body { 
+  body {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
       "header header header "
       "nav article ads"
       "footer footer footer";
@@ -12,9 +12,7 @@
     grid-gap: 10px;
     height: 100vh;
     margin: 0;
-    }
-  
- 
+  }
 
   #pageHeader {
     grid-area: header;
@@ -22,107 +20,96 @@
   #pageFooter {
     grid-area: footer;
   }
-  #mainArticle { 
-    grid-area: article;  
-    background-position: bottom;  
+  #mainArticle {
+    grid-area: article;
+    background-position: bottom;
     background-repeat: no-repeat;
   }
-  #mainNav { 
-    grid-area: nav; 
-    }
-  #siteAds { 
-    grid-area: ads; 
+  #mainNav {
+    grid-area: nav;
+  }
+  #siteAds {
+    grid-area: ads;
     background-color: rgb(223, 140, 47);
-  
-    }
-  header, footer, article, nav, div {
+  }
+  header,
+  footer,
+  article,
+  nav,
+  div {
     padding: 20px;
     background: lemonchiffon;
-    
   }
-  
-  nav{
+
+  nav {
     background-color: rgb(223, 140, 47);
   }
-  
-  figure {
-      margin: 0;
-  }
-  .wrapper{
-              display:grid;
-              grid-template-columns: 1fr 1fr 1fr;
-              grid-gap: 1em;
-             /* grid-auto-rows: 300px; */
-              grid-auto-rows: minmax(100px, auto);
-          }
-          .wrapper > div{
-              background: #eee;
-              padding: 1em;
-          }
-          .wrapper > div:nth-child(odd){
-              background: #ddd;
-          }
-  
-  </style>
-<body>
- 
- 
- 
-  <header id="pageHeader" style="background-color:#E6B0C5;">
- 
- 
- <p> <a href="../index.html"> <img src="../Image/phone-icon.jpg" width=40 heigth=40 alt=Home align=left> HJEM </a></p>
 
-  
-   
-  
+  figure {
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    /* grid-auto-rows: 300px; */
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .wrapper > div {
+    background: #eee;
+    padding: 1em;
+  }
+  .wrapper > div:nth-child(odd) {
+    background: #ddd;
+  }
+</style>
+<body>
+  <header id="pageHeader" style="background-color: #e6b0c5">
+    <p>
+      <a href="../index.html">
+        <img
+          src="../Image/ninja.png"
+          width="40"
+          heigth="40"
+          alt="Home"
+          align="left"
+        />
+      </a>
+      <a href="javascript:history.back()">TILBAGE</a>
+    </p>
   </header>
 
+  <article id="mainArticle">
+    <figure align="left">
+      <figcaption>Lyt til samtalen</figcaption>
+      <audio controls src="Audio/Lægedialog1_red.wav" align="middle">
+        Your browser does not support the
+        <code>audio</code> element.
+      </audio>
+    </figure>
 
-
-  <article id="mainArticle" >
-                <figure align="left">
-                  <figcaption>Lyt til samtalen</figcaption>
-                  <audio
-                      controls
-                      src="Audio/Lægedialog1_red.wav"
-                      align="middle">
-                          Your browser does not support the
-                          <code>audio</code> element.
-                  </audio>
-              </figure>
-
-
-<!-- This is where your main content goes - like a dialogue -->
-
+    <!-- This is where your main content goes - like a dialogue -->
   </article>
- 
 
   <nav id="mainNav">
-  
-  
-<p><a href="Modalverber_lægedialog.htm">Øvelse 1:  </a></p>
-<p><a href="Præpositioner.htm">Øvelse 2:  </a></p>
-<p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
-<p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
-<p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
-
-
-
-
-  
+    <p><a href="Modalverber_lægedialog.htm">Øvelse 1: </a></p>
+    <p><a href="Præpositioner.htm">Øvelse 2: </a></p>
+    <p><a href="Build-up_laege01.htm">Øvelse 3: </a></p>
+    <p><a href="Læge_lektionsplan.html">Lektionsplan </a></p>
+    <p><a href="Papir docs til klasseUV.html">Dokumenter til download </a></p>
   </nav>
-  
-  
+
   <div id="siteAds">
-  
-  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=DA>Gloseliste:<o:p></o:p></span></b></p>
-
+    <p class="MsoNormal">
+      <b style="mso-bidi-font-weight: normal"
+        ><span lang="DA">Gloseliste:<o:p></o:p></span
+      ></b>
+    </p>
   </div>
-  <footer id="pageFooter" style="background-color:#E6B0C5;">
-  
-         <medium>&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen Haurholm-Larsen</medium>
-
- 
+  <footer id="pageFooter" style="background-color: #e6b0c5">
+    <medium
+      >&copy; Copyright 2020, Leon Josef Feng-Feldthusen & Steffen
+      Haurholm-Larsen</medium
+    >
   </footer>
 </body>
