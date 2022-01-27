@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../2sprogstilegnelse/Udviklingsarbejde_Steffen"
+		},
+		{
+			"path": "../../../2sprogstilegnelse/Udviklingsarbejde_Steffen/HotPot"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Danish_In_Action_3.0"
+	}
+}
