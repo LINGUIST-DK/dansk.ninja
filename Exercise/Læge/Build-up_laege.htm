@@ -1419,22 +1419,35 @@ function DisplayExercise(StuffToDisplay){
 
 <body onload="StartUp()" id="TheBody" >
 
+	<header id="pageHeader" style="background-color: #e6b0c5">
+		<a href="../../index.html">
+		  <img
+			src="../../Image/ninja.png"
+			width="50"
+			heigth="50"
+			alt="Home"
+			align="left"
+		  />
+		</a>
+  
+		<p><a href="javascript:history.back()">TILBAGE</a></p>
+	  </header>
+
 <!-- BeginTopNavButtons -->
 
 
 <div class="NavButtonBar" id="TopNavBar">
 
 
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+	
 
 
-
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='L&#x00e6;ge.html'; return false;"> Index </button>
-
-
-
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
-
+<button
+class="NavButton"
+onclick="location='../../Læge/Læge.html'; return false;"
+>
+Index
+</button>
 
 </div>
 
@@ -1496,16 +1509,25 @@ function DisplayExercise(StuffToDisplay){
 <div class="NavButtonBar" id="BottomNavBar">
 
 
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="history.back(); return false;">&lt;=</button>
+	
+	<div class="NavButtonBar" id="BottomNavBar">
+		<button class="NavButton" onclick="history.back(); return false;">
+		  &lt;=
+		</button>
 
+<button
+class="NavButton"
+onclick="location='../../Læge/Læge.html'; return false;"
+>
+Index
+</button>
 
-
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)"  onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='L&#x00e6;ge.html'; return false;"> Index </button>
-
-
-
-<button class="NavButton" onfocus="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseover="NavBtnOver(this)" onmouseout="NavBtnOut(this)" onmousedown="NavBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="location='nextpage.htm'; return false;">=&gt;</button>
-
+<button
+class="NavButton"
+onclick="location='Build-up_laege01'; return false;"
+>
+=&gt;
+</button>
 
 </div>
 
